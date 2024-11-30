@@ -1,4 +1,4 @@
-sandbox*
+sandbox.py
 config.json
 __pycache__/
 .pytest_cache/

@@ -13,7 +13,7 @@ class BasePage():
 
     def check_same_images_sizes(self, images):
         
-        print(f"Found {len(images)} images.")
+        #print(f"Found {len(images)} images.")
         if not images:
             raise ValueError("No images found to compare")
         
@@ -21,5 +21,6 @@ class BasePage():
         first_image_size = first_image.size
         for image in images:
             current_image_size = image.size
+            #print(current_image_size['height'], first_image_size['height'])
             assert current_image_size['height'] == first_image_size['height'], 'Images hight not the same'
             assert current_image_size['width'] == first_image_size['width'], 'Images width not the same'
