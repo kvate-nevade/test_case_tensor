@@ -9,3 +9,7 @@ class SbisContactPageLocators():
 
 class TensorMainPageLocators():
     POWER_IN_PEOPLE_BLOCK = (By.CSS_SELECTOR, '.tensor_ru-Index__block4-content.tensor_ru-Index__card')
+    MORE_DETAILS_IN_POWER_BLOCK = (By.CSS_SELECTOR, '.tensor_ru-Index__block4-content .tensor_ru-link')
+
+class TensorAboutPageLocators():
+    PICTURES_IN_BLOCK_WORKING = (By.CSS_SELECTOR, '.tensor_ru-About__block3-image.new_lazy.loaded')
