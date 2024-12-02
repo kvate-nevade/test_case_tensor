@@ -1,3 +1,4 @@
+import os
 class BasePage():
     def __init__(self, browser, url, timeout = 10):
         self.browser = browser
@@ -24,3 +25,4 @@ class BasePage():
             #print(current_image_size['height'], first_image_size['height'])
             assert current_image_size['height'] == first_image_size['height'], 'Images hight not the same'
             assert current_image_size['width'] == first_image_size['width'], 'Images width not the same'
+

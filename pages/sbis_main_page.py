@@ -10,5 +10,9 @@ class SbisMainPage(BasePage):
         more_offices = self.browser.find_element(*SbisMainPageLocators.MORE_OFFICES_LINK)
         more_offices.click()
         
+    def click_to_downoload_local_version(self):
+        download_link = self.browser.find_element(*SbisMainPageLocators.DOWNLOAD_LOCAL_VERSION_LINK)
+        download_link.click()
+
 
     
