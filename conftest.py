@@ -32,7 +32,6 @@ def browser(request, download_dir):
                                                 "download.prompt_for_download": False,
                                                 "safebrowsing.enabled": True
                                                  })
-        print(f"Задается папка загрузки: {download_dir}")
         browser = webdriver.Chrome(options=options)
         browser.maximize_window()
         browser.implicitly_wait(10)

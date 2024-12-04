@@ -13,11 +13,8 @@ class BasePage():
         self.browser.switch_to.window(window_name)
 
     def check_same_images_sizes(self, images):
-        
-        #print(f"Found {len(images)} images.")
         if not images:
             raise ValueError("No images found to compare")
-        
         first_image = images[0]
         first_image_size = first_image.size
         for image in images:
