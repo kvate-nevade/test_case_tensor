@@ -9,7 +9,7 @@ class SbisContactPageLocators():
     TENSOR_LOGO = (By.CSS_SELECTOR, '#contacts_clients .sbisru-Contacts__logo-tensor.mb-12')
     SPECIFIC_REGION = (By.CSS_SELECTOR, '.sbisru-Contacts__relative .sbis_ru-Region-Chooser__text')
     SPECIFIC_PARTNERS = (By.CSS_SELECTOR, '.sbisru-Contacts-List__name')
-    REGION_KAMCHATSKY_KRAY = (By.XPATH, '//span[contains(text(), "41 Камчатский край")]')
+    REGION_KAMCHATSKY_KRAY = (By.XPATH, '//span[contains(text(), "Камчатский край")]')
 
 class SbisDownloadPageLocators():
     WINDOWS_TAB_IN_PLUGIN = (By.XPATH, "//span[text()='Windows']")

@@ -24,8 +24,9 @@ class SbisContactPage(BasePage):
         start_partners_list = self.browser.find_elements(*SbisContactPageLocators.SPECIFIC_PARTNERS)
         region_lists = self.browser.find_element(*SbisContactPageLocators.SPECIFIC_REGION)
         region_lists.click()
-        self.browser.find_element(*SbisContactPageLocators.REGION_KAMCHATSKY_KRAY).click()
-        WebDriverWait(self.browser, 10).until(EC.title_contains("Камчатский край"))
+        link_kamchatsky_krai = WebDriverWait(self.browser, 15).until(EC.visibility_of_element_located(SbisContactPageLocators.REGION_KAMCHATSKY_KRAY))
+        link_kamchatsky_krai.click()
+        WebDriverWait(self.browser, 15).until(EC.title_contains("Камчатский край"))
         shoosed_region_text = self.browser.find_element(*SbisContactPageLocators.SPECIFIC_REGION).text
         finish_partners_list = self.browser.find_elements(*SbisContactPageLocators.SPECIFIC_PARTNERS)
         assert shoosed_region_text == 'Камчатский край', 'Region link must be Камчатский край'
